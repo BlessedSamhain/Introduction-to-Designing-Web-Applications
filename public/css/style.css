@@ -201,10 +201,6 @@ section {
     position: relative;
 }
 
-/*.menu-nav{
-    display:grid;
-    grid-template-columns: repeat(2, minmax(0, fr));
-}*/
 .fa-book{
     position: absolute;
     top: 2em;
@@ -255,7 +251,7 @@ a {
 }
 
 div img{
-    scale: 0.75;
+    scale: 0.6;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -322,8 +318,76 @@ div img{
     -webkit-text-stroke: 1px #000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.create_account_button{
+    width: 10vw; 
+    height: 9vh; 
+    font-size: 100%; 
+    border-radius: 10px;
+}
 
-  
+.create_account_image{
+    scale: 0.5;
+}
+
+footer{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    display: grid;
+    position: relative;
+}
+
+footer a{
+    display: grid;
+    width: 10em;
+    height: auto;
+    align-items: start;
+    justify-content: start;
+    position: relative;
+}
+
+/*ACCOUNT CREATED SUCCESSFULLY*/
+.account_created_successfully_square{
+    display: grid;
+    width: 12em;
+    height: 6em;
+    padding: 0.3em;
+
+    grid-column: 4 / 5;
+    grid-row: 3 / 7;
+
+    align-items: left;
+    justify-content: space-around;
+    background: rgba(222, 245, 226, 0.3);
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    border-radius: 10px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.account_created_successfully_layout{
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(12, auto);
+}
 
 /* ############################################################ */
 @media only screen and (max-device-width: 420px)
@@ -412,10 +476,12 @@ div img{
 
     .navbutton
     {
-        font-size: smaller;
+        font-size: 110%;
         display: grid;
         justify-content: center;
         align-items: center;
+        width: 8em;
+        height: 3.5em;
     }
 
     section{
@@ -431,11 +497,6 @@ div img{
         justify-content: center; /* Aligns content horizontally */
         align-items: center; /* Aligns content vertically */
     }
-    .createaccount_layout{
-        display: grid;
-        justify-content: center;
-        grid-gap: 0.1em;
-    }
 
     .create_account_main{
         margin: 0;
@@ -448,5 +509,18 @@ div img{
         grid-row-start: 1;
         justify-content: left;
         margin:0px;
+    }
+
+    .create_account_button{
+        width: 15vw;
+        height: auto;
+        align-items: center; 
+    }
+
+    footer{
+        grid-template-columns: 100%;
+        row-gap: 1.5em;
+        align-items: center;
+        justify-content: center;
     }
 }
