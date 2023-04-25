@@ -23,6 +23,8 @@ body
 {
     display: block;
     justify-self: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo img {
@@ -231,8 +233,11 @@ section {
 }
 
 a {
+    display: grid;
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
+    align-items: center;
+    justify-items: center;
   }
 
 /*CREATE ACCOUNT*/
@@ -240,7 +245,8 @@ a {
 .create_account_container
 {
     display: grid;
-    grid-template-columns: 70%, 30%;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 10% 40% 30%;
 
     background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
     background-blend-mode: darken;
@@ -250,57 +256,16 @@ a {
     height: 100vh;
 }
 
-div img{
-    scale: 0.6;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.list {
-    display: grid;
-    align-items: center;
-    list-style: none;
-    padding-right: 2em;
-  }
-  
-  li i{
-    position: absolute;
-    top: 2em;
-    right: 2em;
-  }
-
-#tell_us{
-    text-transform: lowercase;
-    width: 110%;
-}
-
-.tellform{
+.square2{
     width: fit-content;
     height: fit-content;
+    padding: 0.25%;
+
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    /* grid-auto-rows: 3.5em; */
-}
-
-.createaccount_layout{
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    height: 100vh; 
-    row-gap: 4em;
-}
-.square2{
-    margin-top: 2em;
-    width: 11em;
-
-    display: flex;
+    grid-row: 2;
+    grid-column: 2;
     justify-content: center;
     align-items: center;
-
 
     background: rgba(222, 245, 226, 0.3);
     mix-blend-mode: normal;
@@ -318,51 +283,81 @@ div img{
     -webkit-text-stroke: 1px #000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.create_account_button{
-    width: 10vw; 
-    height: 9vh; 
-    font-size: 100%; 
-    border-radius: 10px;
-}
 
-.create_account_image{
-    scale: 0.5;
-}
-
-footer{
-    width: auto;
-    height: auto;
+.tellform{
+    width: fit-content;
+    height: fit-content;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(3, auto);
+    grid-row: 3;
+    grid-column: 2;
+}
+.create_account_crossedout{
+    display: grid;
+    grid-column: 2;
+    grid-row: 4;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+
+div img{
+    scale: 0.7;
+    display: grid;
+    align-items: center;
+}
+
+.list {
+    display: grid;
+    align-items: center;
+    list-style: none;
+    padding-right: 2em;
+  }
+  
+  li i{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+  }
+
+.tell_us{
+    display: grid;
+    grid-row: 3;
+    grid-column: 2;
+    text-transform: lowercase;
+    width: 110%;
     align-items: center;
     justify-content: center;
 }
 
-footer img{
-    display: grid;
-    position: relative;
+.create_account_button{
+    width: 9vw; 
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
 }
 
-footer a{
+.create_account_image{
     display: grid;
-    width: 10em;
-    height: auto;
-    align-items: start;
-    justify-content: start;
-    position: relative;
+    align-items: right;
+    grid-row: 4;
+    grid-column: 3;
+    justify-content: left;
 }
 
 /*ACCOUNT CREATED SUCCESSFULLY*/
 .account_created_successfully_square{
     display: grid;
     width: 12em;
-    height: 6em;
+    height: fit-content;
     padding: 0.3em;
 
-    grid-column: 4 / 5;
-    grid-row: 3 / 7;
+    grid-column: 2;
+    grid-row: 2;
 
-    align-items: left;
+    align-items: end;
     justify-content: space-around;
     background: rgba(222, 245, 226, 0.3);
     mix-blend-mode: normal;
@@ -380,13 +375,87 @@ footer a{
     -webkit-text-stroke: 1px #000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.account_created_book{
+    grid-column: 4;
+    grid-row: 3;
+}
+
 .account_created_successfully_layout{
     height: 100vh;
     width: 100vw;
 
     display: grid;
-    grid-template-columns: repeat(12, auto);
-    grid-template-rows: repeat(12, auto);
+    grid-template-columns: 5% repeat(3, 30%) 5%;
+    grid-template-rows: 10% repeat(3, 30%);
+}
+.go_shopping_button{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3;
+    grid-row: 5;
+}
+
+/* SETTINGS */
+.settings_layout{
+    height: 100vh; /* jednostki względem viewportu */
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 5% repeat(5, 18%) 5%;
+    grid-template-rows: 5% repeat(4, 22.5%) 5%;
+    align-items: center;
+
+}
+
+.settings_square_style{
+    padding: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    text-transform: lowercase;
+
+    background: rgba(222, 245, 226, 0.3);
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+
+    color: #FFFFFF;
+
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.del_acc_layout{
+    grid-row: 2;
+    grid-column: 2 / 4;
+}
+
+.cha_pass_layout{
+    grid-row: 3;
+    grid-column: 2 / 4;
+}
+
+.cha_e-m_layout{
+    grid-row: 3;
+    grid-column: 5 / 7;
+}
+
+.cha_pho_num_layout{
+    grid-row: 4;
+    grid-column: 5 / 8;
+}
+
+.back{
+    grid-column: 4;
+    grid-row: 5;
 }
 
 /* ############################################################ */
@@ -407,8 +476,9 @@ footer a{
 
     .logo-container{
         display: flex;
-        margin-top: auto;
-        margin-left: 0;
+        align-items: center;
+        height: fit-content;
+        margin: 0;
     }
 
     form{
@@ -417,12 +487,13 @@ footer a{
     }
 
     .logo img{
+        width: 100vw;
+        height: 15vh;
+        
         scale: 1;
-        display: block;
-        margin-top: -10em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
+        display: flex;
+        align-items: start;
+        justify-content: center;
     }
 
     .base-container
@@ -493,16 +564,39 @@ footer a{
         font-size: 120%;
         margin-top: 0;
         width: 100%;
-        display: flex;
+        display: grid;
+        grid-row: 3;
         justify-content: center; /* Aligns content horizontally */
         align-items: center; /* Aligns content vertically */
     }
 
-    .create_account_main{
-        margin: 0;
-        align-self: flex-start;
+    .square2 {
+        display: grid;
+        grid-row: 2;
+        align-items: center;
+        justify-content: center;
+        grid-column: 2;
     }
 
+    .create_account_container{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: repeat(2, 10%) 60% repeat(2, 10%);
+        align-items: center;
+        gap: 0%;
+    }
+
+    .create_account_image{
+        grid-row: 4;
+        grid-column: 3;
+        justify-content: left;
+    }
+
+    .createaccount_layout{
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 3;
+    }
     .tellform{
         display: grid;
         grid-template-columns: repeat(2, 13em);
@@ -517,10 +611,58 @@ footer a{
         align-items: center; 
     }
 
-    footer{
+    .create_account_crossedout{
         grid-template-columns: 100%;
-        row-gap: 1.5em;
+        height: 150%;
+    }
+    /* ACCOUNT CREATED SUCCESSFULLY */
+    .account_created_successfully_layout{
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+    }
+    .account_created_successfully_square{
+        grid-column: 2;
         align-items: center;
         justify-content: center;
     }
+    .go_shopping_button{
+        grid-column: 2 / 4;
+        grid-row: 3;
+    }
+    .account_created_book{
+        grid-column: 2 / 4;
+        grid-row: 4;
+    }
+
+    /* SETTINGS */
+    .settings_layout{
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 10% repeat(4, 12%);
+    }
+
+    .del_acc_layout{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    .cha_pass_layout{
+        grid-row: 3;
+        grid-column: 2;
+    }
+    
+    .cha_e-m_layout{
+        grid-row: 4;
+        grid-column: 2;
+    }
+    
+    .cha_pho_num_layout{
+        grid-row: 5;
+        grid-column: 2;
+    }
+    
+    .back{
+        grid-column: 2;
+        grid-row: 6;
+    }
+    
 }
