@@ -238,6 +238,7 @@ a {
     text-decoration: inherit; /* no underline */
     align-items: center;
     justify-items: center;
+    -webkit-text-stroke: 1px #000;
   }
 
 /*CREATE ACCOUNT*/
@@ -435,7 +436,7 @@ div img{
 
 .del_acc_layout{
     grid-row: 2;
-    grid-column: 2 / 4;
+    grid-column: 2;
 }
 
 .cha_pass_layout{
@@ -679,6 +680,132 @@ div img{
 
     margin-right: 2em;
     margin-left: 2em;
+}
+
+/* Delete Account */
+.deleteaccount_container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10% 60% 30%;
+
+    background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.delete_announcement{
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px #000;
+
+    grid-column: 2 / 4;
+    grid-row: 2;
+    width: 40%;
+    height: fit-content;
+    padding: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteaccount_footer{
+    grid-row: 3;
+    grid-column: 1 / 4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delete_yes{
+    grid-row: 3;
+    grid-column: 2;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em;
+    margin-right: 15em;
+    color: red;
+}
+
+.delete_no_ive{
+    grid-row: 3;
+    grid-column: 2;
+    padding: 0.5em;
+    width: fit-content;
+    height: fit-content;
+    color: green;
+}
+
+/* ACCOUNT DEACTIVATED */
+.accountdeactivated_container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 60% 25%;
+
+    background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.accountdeactivated_announcement{
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px #000;
+
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0.1em;
+    height: fit-content;
+    
+}
+
+.accountdeactivated1, .accountdeactivated2{
+    padding: 0.2em;
+}
+
+.accountdeactivated3{
+    padding: 0.3em;
+    color: red;
+}
+
+.accountdeactivated_button{
+    grid-row: 3;
+    grid-column: 2;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.3em;
+    margin: auto;
 }
 
 /* ############################################################ */
@@ -1016,5 +1143,34 @@ div img{
 
 .submit_button{
     margin: 0.25em;
+    scale: 0.9;
+}
+/* Delete Account */
+.deleteaccount_container{
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 30% 30% 20%;
+    justify-content: center;
+}
+
+.delete_announcement{
+    grid-column: 2 / 3; 
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deleteaccount_footer{
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    align-items: center;
+}
+
+.delete_yes, .delete_no_ive{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 }
