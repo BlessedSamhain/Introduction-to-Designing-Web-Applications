@@ -873,6 +873,86 @@ div img{
     margin-bottom: auto;
 }
 
+/* PASSWORD CHANGED SUCCESSFULLY */
+.passwordchangedsuccessfully_container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 50% 35%;
+
+    background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.passwordchangedsuccessfully_layout{
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    border: 1px solid #000000;
+    border-radius: 15px;
+
+    font-family: 'Arial';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #000;
+
+    color: #FFFFFF;
+
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    padding: 0.5em;
+    grid-row: 2;
+    grid-column: 2;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.passwordchangedsuccessfully_tick{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+/* CHANGE E-MAIL */
+.changeemail_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 15% 50% 35%;
+
+    background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.changeemail_image{
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+}
+
+.changeemail_button{
+    grid-column: 1;
+    grid-row: 3;
+    margin: auto;
+    width: 7em;
+    padding: 0.25em;
+}
+
+.changeemail_back{
+    grid-column: 2;
+    grid-row: 3;
+    margin: auto;
+}
+
 /* #11########################################################### */
 @media only screen and (max-device-width: 420px)
 {
@@ -1239,30 +1319,47 @@ div img{
 }
 
 /* CHANGE PASSWORD */
-.changepassword_container{
+.changepassword_container, .changeemail_container{
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 25% 45% 10% 30%;
+    grid-template-rows: 20% 30% 20% 30%;
 }
 
 .changepassword_form{
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+    line-height: 0.1em;
+    grid-row: 2;
 }
 
-.changepassword_image{
+.changepassword_formsquare{
+    margin-left: 0;
+    margin-bottom: 0em;
+    margin-top: -1.5em;
+    height: 1.5em;    
+}
+
+.changepassword_image, .changeemail_image{
     grid-column: 2;
     grid-row: 1;
     margin: auto;
 }
 
-.changepassword_button{
-    margin-right: auto;
-    margin-left: auto;
+.changepassword_button, .changeemail_button{
+    grid-column: 2;
+    grid-row: 3;
+    margin: auto;
+    width: 8em;
+    padding: 0.5em;
 }
 
-.changepassword_back{
+.changepassword_back, .changeemail_back{
     grid-row: 4;
     grid-column: 2;
+    margin-bottom: auto;
     margin-left: auto;
+    margin-right: auto;
 }
+
 }
