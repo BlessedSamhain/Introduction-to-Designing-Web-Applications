@@ -953,6 +953,268 @@ div img{
     margin: auto;
 }
 
+/* YES WE HAVE IT */
+.yeswehaveit_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 37% 12% 20%;
+
+    background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.yeswehaveit_image{
+    grid-row: 2;
+    grid-column: 1;
+    margin: auto;
+}
+
+.yeswehaveit_square{
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    grid-column: 2;
+    grid-row: 2;
+
+    height: 3.5em;
+    width: 4em;
+    padding: 0.3em;
+    margin-left: 1em;
+    -webkit-text-stroke: 1px #000;
+}
+
+.addtocart_button{
+    grid-row: 3;
+    grid-column: 2;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.25em;
+}
+
+.gotocart_button{
+    grid-row: 4;
+    grid-column: 2;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.25em;
+}
+
+.yeswehaveit_back{
+    grid-row: 5;
+    grid-column: 1 / 3;
+    margin: 0;
+    scale: 0.7;
+}
+
+/* HERE WE HAVE - CART */
+.cart_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+
+    background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.herewehave_square{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+
+    color: #FFFFFF;
+
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+
+    grid-row: 1;
+    grid-column: 1;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.1em;
+    margin: auto;
+}
+
+.booklist{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #FFFFFF;
+
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #D9D9D9 0.79%, rgba(217, 217, 217, 0) 100%);
+    mix-blend-mode: darken;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+
+    grid-row: 2;
+    grid-column: 1;
+    width: 50%;
+    height: 90%;
+    padding: 0.2em;
+    margin: auto;
+}
+
+.cartbutton_layout{
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 60% 15% 15%;
+}
+
+.cart_image{
+    grid-row: 1;
+    grid-column: 1;
+    scale: 0.8;
+    margin-right: 0;
+}
+
+.backtoshop_button{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    grid-row: 2;
+}
+
+.buy_button{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    grid-row: 3;
+}
+
+/* ENTER YOUR SHIPPING ADDRESS */
+.enter_container{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 10% 60% 20%;
+
+    background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.enteryoushippingaddres_square{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+
+    color: #FFFFFF;
+
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+
+    grid-row: 2;
+    grid-column: 2;
+    margin: auto;
+    padding: 0.15em;
+}
+
+.enter_forms{
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 33.5% 33.5% 33%;
+    grid-template-rows: 33.5% 33.5% 33%;
+    margin-top: 2em;
+}
+
+.enter_col_1{
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    
+}
+
+.enter_col_2{
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
+
+.enter_col_3{
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    grid-column: 3;
+    grid-row: 1 / 4;
+}
+
+.enter_label{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #FFFFFF;
+
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: auto;
+}
+
+.enter_formsquare{
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    mix-blend-mode: darken;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.enter_footer{
+    grid-column: 2;
+    grid-row: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* #11########################################################### */
 @media only screen and (max-device-width: 420px)
 {
@@ -1360,6 +1622,68 @@ div img{
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* YES WE HAVE IT */
+.yeswehaveit_container{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 25% 20% 10% 10% 10%;
+}
+
+.yeswehaveit_image{
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: 0;
+}
+
+.yeswehaveit_square, .addtocart_button, .gotocart_button{
+    margin: auto;
+    scale: 1.2;
+}
+
+.yeswehaveit_back{
+    scale: 0.8;
+    width: 100%;
+    height: 100%;
+    margin-left: 2em;
+}
+
+/* HERE WE HAVE - CART */
+.cart_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 40% 12% 12%;
+}
+
+.cartbutton_layout{
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.booklist{
+    width: 80%;
+}
+
+.cart_image{
+    grid-row: 1;
+    grid-column: 1;
+    scale: 1;
+    margin: auto;
+}
+
+.backtoshop_button{
+    grid-row: 3;
+    margin-left: 0;
+}
+
+.buy_button{
+    grid-row: 4;
+    margin-left: 0;
 }
 
 }
