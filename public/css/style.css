@@ -1149,6 +1149,7 @@ div img{
     grid-column: 2;
     margin: auto;
     padding: 0.15em;
+    scale: 1.30;
 }
 
 .enter_forms{
@@ -1157,7 +1158,7 @@ div img{
     display: grid;
     grid-template-columns: 33.5% 33.5% 33%;
     grid-template-rows: 33.5% 33.5% 33%;
-    margin-top: 2em;
+    margin-top: 10em;
 }
 
 .enter_col_1{
@@ -1186,13 +1187,14 @@ div img{
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 35px;
 
     color: #FFFFFF;
 
     -webkit-text-stroke: 1px #000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-right: auto;
+    
 }
 
 .enter_formsquare{
@@ -1215,7 +1217,33 @@ div img{
     justify-content: center;
 }
 
-/* #11########################################################### */
+/* THANKS FOR SHOPPING IN OUT BOOKSTORE*/
+.thanks_container{
+    display: grid;
+    grid-template-columns: 20% 20% 30% 30%;
+    grid-template-rows: 10% 80% 10%;
+
+    background: linear-gradient(180deg, rgba(9, 172, 207, 0.59) 0%, rgba(147, 248, 86, 0) 100%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.thanks_for_shopping_text{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+
+    color: #FFFFFF;
+
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ############################################################ */
 @media only screen and (max-device-width: 420px)
 {
     *{
@@ -1684,6 +1712,97 @@ div img{
 .buy_button{
     grid-row: 4;
     margin-left: 0;
+}
+
+/* ENTER YOUR SHIPPING ADDRESS */
+
+.enter_container{
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 7% 7% 60% 26%;
+}
+
+.enteryoushippingaddres_square{
+    grid-column: 2 / 4;
+}
+
+.enter_forms{
+    grid-column: 2 / 4;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 33.35%);
+}
+
+.mediaqueries1, .mediaqueries2, .mediaqueries3{
+    display: grid;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    scale: 0.8;
+}
+
+.firstrow{
+    grid-row: 1;
+}
+
+.secondrow{
+    grid-row: 2;
+}
+
+.thirdrow{
+    grid-row: 3;
+}
+
+.enter_col_1{
+    grid-column: 1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.enter_col_2{
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.enter_col_3{
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 50%;
+}
+
+.enter_label{
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.enter_formsquare{
+    margin: 0;
+}
+
+.enter_footer{
+    grid-column: 2 / 4;
+    grid-row: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 }
