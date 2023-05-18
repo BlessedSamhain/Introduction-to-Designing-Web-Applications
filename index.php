@@ -5,7 +5,7 @@ require "Routing.php";
 $path = trim($_SERVER['REQUEST_URI'], '/');
 $path = parse_url($path, PHP_URL_PATH);
 
-Routing::get('login', 'DefaultController');
+Routing::get('', 'DefaultController');
 Routing::get('projects', 'DefaultController');
 Routing::get('accountcreatedsuccessfully', 'DefaultController');
 Routing::get('accountdeactivated', 'DefaultController');
@@ -31,4 +31,7 @@ Routing::get('whatyouarelookingebook', 'DefaultController');
 Routing::get('wherecourierneedstogo', 'DefaultController');
 Routing::get('yeswehaveitbook', 'DefaultController');
 Routing::get('yeswehaveitebook', 'DefaultController');
+
+Routing::post('login', 'SecurityController');
+
 Routing::run($path);

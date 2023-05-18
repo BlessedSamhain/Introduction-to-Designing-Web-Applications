@@ -5,7 +5,7 @@
     <script src="https://kit.fontawesome.com/61cd813530.js" crossorigin="anonymous"></script>
 </head>
 <body class="enter_container">
-    <a href = "login.html"><i class="fa-sharp fa-solid fa-book"></i></a>
+    <a href = "login.php"><i class="fa-sharp fa-solid fa-book"></i></a>
     <div class="enteryoushippingaddres_square">tell us, where our courier needs to go</div>
     <div class="enter_forms">  
         <form class = "enter_col_1">
@@ -38,8 +38,8 @@
         </form>
     </div>
     <div class="enter_footer">
-        <a href="wetrytosend.html" class="looking_tick"><img  src="public/img/tick.svg"></a>
-        <a href="whathappend.html" class="looking_back"><img  src="public/img/back.svg"></a>
+        <a href="wetrytosend.php" class="looking_tick"><img src="public/img/tick.svg"></a>
+        <a href="whathappend.php" class="looking_back"><img src="public/img/back.svg"></a>
     </div>
     </div>
 </body>

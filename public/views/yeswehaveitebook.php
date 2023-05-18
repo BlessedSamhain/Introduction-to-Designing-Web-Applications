@@ -5,9 +5,9 @@
     <script src="https://kit.fontawesome.com/61cd813530.js" crossorigin="anonymous"></script>
 </head>
 <body class="yeswehaveit_container">
-    <a href = "login.html"><i class="fa-sharp fa-solid fa-book"></i></a>
+    <a href = "login.php"><i class="fa-sharp fa-solid fa-book"></i></a>
         <div class="yeswehaveit_image"><img src="public/img/yeswehaveit_image.svg"></div>
         <div class="yeswehaveit_square">YES WE HAVE IT!</div>
-        <button class="getebook_button"><a href="ebooksent.html">get e-book</a></button>
-        <a href="whatyouarelookingebook.html" class="yeswehaveit_back"><img  src="public/img/back.svg"></a>
+        <button class="getebook_button"><a href="ebooksent.php">get e-book</a></button>
+        <a href="whatyouarelookingebook.php" class="yeswehaveit_back"><img src="public/img/back.svg"></a>
 </body>

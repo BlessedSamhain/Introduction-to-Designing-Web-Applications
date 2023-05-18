@@ -5,7 +5,7 @@
     <script src="https://kit.fontawesome.com/61cd813530.js" crossorigin="anonymous"></script>
 </head>
 <body class="passwordchangedsuccessfully_container">
-        <a href = "login.html"><i class="fa-sharp fa-solid fa-book"></i></a>
-        <div class="passwordchangedsuccessfully_layout">e-mail changed successfully</div>
-        <a href="projects.html" class="passwordchangedsuccessfully_tick"><img  src="public/img/tick.svg"></a>
+        <a href = "login.php"><i class="fa-sharp fa-solid fa-book"></i></a>
+        <div class="passwordchangedsuccessfully_layout">number changed successfully</div>
+        <a href="projects.php" class="passwordchangedsuccessfully_tick"><img src="public/img/tick.svg"></a>
 </body>
