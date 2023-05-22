@@ -5,7 +5,7 @@
     <script src="https://kit.fontawesome.com/61cd813530.js" crossorigin="anonymous"></script>
 </head>
 <body class="changeemail_container">
-        <a href = "login.php"><i class="fa-sharp fa-solid fa-book"></i></a>
+        <a href = "login"><i class="fa-sharp fa-solid fa-book"></i></a>
         <form class="changepassword_form">
             <label class="changepassword_label">old number</label>
             <input class="changepassword_formsquare">
@@ -15,6 +15,6 @@
             <input class="changepassword_formsquare">
         </form>
         <div class="changeemail_image"><img src="public/img/changenumber_image.svg"></div>
-        <button class="changeemail_button"><a href="numberchangedsuccessfully.php">CHANGE NUMBER</a></button>
-        <a href="settings.php" class="changeemail_back"><img src="public/img/back.svg"></a>
+        <button class="changeemail_button"><a href="numberchangedsuccessfully">CHANGE NUMBER</a></button>
+        <a href="settings" class="changeemail_back"><img src="public/img/back.svg"></a>
 </body>

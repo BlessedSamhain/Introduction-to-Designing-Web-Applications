@@ -72,7 +72,6 @@ button, .button
     font-size: 170%;
     line-height: 170%;
 
-    text-transform: unset;
     font-feature-settings: 'ordn' on;
 
     color: gray;

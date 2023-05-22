@@ -5,7 +5,7 @@
     <script src="https://kit.fontawesome.com/61cd813530.js" crossorigin="anonymous"></script>
 </head>
 <body class="whathappend_container">
-    <a href = "login.php"><i class="fa-sharp fa-solid fa-book"></i></a>
+    <a href = "login"><i class="fa-sharp fa-solid fa-book"></i></a>
     <div class="whathappend_square">tell us what happend</div>
     <form class="type_opinion_form">
         <label class="type_your_opinion">type your opinion here:</label>
@@ -19,7 +19,7 @@
         <input class="datetime_square">
     </form>
     <div class="whathappend_footer">
-        <a href="wherecourierneedstogo.php" class="submit_button provide_text"><div>SUBMIT</div></a>
-        <a href="projects.php" class="looking_back"><img src="public/img/back.svg"></a>
+        <a href="wherecourierneedstogo" class="submit_button provide_text"><div>SUBMIT</div></a>
+        <a href="projects" class="looking_back"><img src="public/img/back.svg"></a>
     </div>
 </body>
