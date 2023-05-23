@@ -1800,10 +1800,9 @@ div img{
 }
 
 .looking_tick{
-    scale: 0.8;
+    scale: 0.2;
     grid-column: 1;
     grid-row: 1;
-
 }
 
 /* WHAT HAPPEND CONTAINIER */
