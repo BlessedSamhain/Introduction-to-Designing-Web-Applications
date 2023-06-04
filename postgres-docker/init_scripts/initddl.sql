@@ -4,8 +4,8 @@ CREATE TABLE "book" (
                       "title" VARCHAR(255),
                       "publisher" VARCHAR(255),
                       "isbn" VARCHAR(17),
-                      "is_ebook" BOOLEAN,
-                      "price" REAL
+                      "is_ebook" BOOLEAN NOT NULL,
+                      "price" REAL NOT NULL
 );
 
 CREATE TABLE "sale" (
@@ -17,17 +17,17 @@ CREATE TABLE "sale" (
 
 CREATE TABLE "sale_book" (
                       "id" SERIAL PRIMARY KEY,
-                      "sale_id" INTEGER,
-                      "book_id" INTEGER
+                      "sale_id" INTEGER NOT NULL,
+                      "book_id" INTEGER NOT NULL
 );
 
 CREATE TABLE "user" (
                       "id" SERIAL PRIMARY KEY,
-                      "first_name" VARCHAR(255),
-                      "last_name" VARCHAR(255),
-                      "email" VARCHAR(255),
-                      "login" VARCHAR(255),
-                      "password" VARCHAR(255)
+                      "first_name" VARCHAR(255) NOT NULL,
+                      "last_name" VARCHAR(255) NOT NULL,
+                      "email" VARCHAR(255) NOT NULL UNIQUE,
+                      "login" VARCHAR(255) NOT NULL UNIQUE,
+                      "password" VARCHAR(255) NOT NULL
 );
 
 
