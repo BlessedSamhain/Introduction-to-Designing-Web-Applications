@@ -45,17 +45,22 @@ class Sale
         $this->price = $price;
     }
 
-    public function getBooks()
-    {
+    public function getBooks() {
         return $this->books;
     }
 
-    public function setBooks($books)
-    {
-        $this->books = $books;
+    public function addBook(Book $book) {
+        $this->books[] = $book;
     }
 
-    public function __construct($id, $date, $userId, $price, $books)
+    public function removeBook(Book $book) {
+        $index = array_search($book, $this->books);
+        if ($index !== false) {
+            array_splice($this->books, $index, 1);
+        }
+    }
+
+    public function __construct($id, $date, $userId, $price, $books = [])
     {
         $this->id = $id;
         $this->date = $date;
