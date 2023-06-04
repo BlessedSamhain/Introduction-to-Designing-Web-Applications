@@ -15,11 +15,10 @@
         </nav>
         <main>
             <a href="whatyouarelooking"><li class="option">GET BOOK</li></a>
-            <a href="whatyouarelookingebook"><li class="option">GET E-BOOK</li></a>
             <a href="whathappend"><li class="option">RETURN</li></a>
         </main>
     </div>
         <section><button class="navbutton"><a href="login">LOG OUT</a></button></section>
-    </div>      
+    </div>
 </body>
 </html>
