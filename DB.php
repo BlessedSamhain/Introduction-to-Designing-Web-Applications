@@ -2,7 +2,7 @@
 // PostgreSQL database credentials
     class DB{
         private $con;
-        private $host = 'localhost';
+        private $host = 'db';
         private $port = '5432';
         private $dbname = 'mydatabase';
         private $user = 'postgres';
