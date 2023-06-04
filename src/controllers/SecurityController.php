@@ -1,31 +1,87 @@
 <?php
 
-use models\User;
+class SecurityController extends AppController {
+    private $userRepository;
 
-require_once 'AppController.php';
-require_once 'src/models/User.php';
+    public function __construct(UserRepository $userRepository) {
+        parent::__construct();
+        $this->userRepository = $userRepository;
+    }
 
-
-class SecurityController extends AppController
-{
     public function login() {
-        $user=new User('abc@student.pk.edu.pl', 'admin', 'Abc', 'Def');
-        //var_dump($_POST);
-        if (!$this->isPost()) {
-            return $this->render('login');
+        $messages = [];
+
+        if ($this->isPost()) {
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+            $user = $this->userRepository->getUserByEmail($email);
+
+            if ($user && password_verify($password, $user['password'])) {
+                // User authenticated successfully
+                // Perform any necessary actions
+
+                // For example, set user session or redirect to a dashboard
+                session_start();
+                $_SESSION['user_id'] = $user['id'];
+                header('Location: dashboard.php');
+                exit();
+            } else {
+                // Invalid credentials
+                $messages[] = 'Invalid email or password';
+            }
         }
 
-        $email=$_POST["email"];
-        $password=$_POST["password"];
+        $this->render('login', ['messages' => $messages]);
+    }
 
-        if ($user->getEmail() != $email) {
-            return $this->render('login', ['messages'=>['User with this email do not exist!']]);
+    public function register() {
+        $messages = [];
+
+        if ($this->isPost()) {
+            $firstName = $_POST['first_name'];
+            $lastName = $_POST['last_name'];
+            $email = $_POST['email'];
+            $login = $_POST['login'];
+            $password = $_POST['password'];
+
+            // Check if email or login already exists in the database
+            $existingUser = $this->userRepository->getUserByEmail($email);
+
+            if ($existingUser) {
+                // User with the provided email already exists
+                $messages[] = 'User with this email already exists';
+            } else {
+                // Create a new User instance
+                $user = new User(null, $firstName, $lastName, $email, $login, password_hash($password, PASSWORD_BCRYPT));
+
+                // Save the user to the database
+                $newUserId = $this->userRepository->createUser($user);
+
+                // User registration successful
+                $messages[] = 'User registered successfully';
+            }
         }
 
-        if ($user->getPassword() != $password) {
-            return $this->render('login', ['messages'=>['Wrong Password']]);
+        $this->render('register', ['messages' => $messages]);
+    }
+
+    public function changePassword() {
+        $messages = [];
+
+        if ($this->isPost()) {
+            $userId = $_POST['user_id'];
+            $newPassword = $_POST['new_password'];
+
+            // Update the user's password in the database
+            $this->userRepository->updateUserPassword($userId, password_hash($newPassword, PASSWORD_BCRYPT));
+
+            // Password change successful
+            $messages[] = 'Password changed successfully';
         }
 
-        return $this->render('projects');
+        $this->render('change_password', ['messages' => $messages]);
     }
 }
+
+?>

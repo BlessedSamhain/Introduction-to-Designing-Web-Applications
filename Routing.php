@@ -19,6 +19,7 @@ class Routing{
             die("Wrong url!");
         }
 
+
         $controller = self::$routes[$action];
         $object = new $controller;
         $action = $action ?: 'index';
